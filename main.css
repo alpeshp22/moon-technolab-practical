@@ -27,7 +27,7 @@ body{
 => Custom Classes
 -------------------------------*/
 
-@media (min-width:1199px) {
+@media (min-width:1200px) {
     .container {
         max-width: 1170px;
     }
@@ -39,6 +39,10 @@ body{
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+.fixed{
+    position: fixed;
+    width: 100%;
 }
 .bg-red {
     background-color: #f00000;
@@ -278,6 +282,19 @@ header{
 .srch-form .form-group .search-btn {
     margin-top: 5px;
 }
+.menu-toggler{
+    position: relative;
+    display: none;
+    width: 25px;
+    height: 30px;
+    border: 0;
+    background-color: transparent;
+    margin-right: 15px;
+}
+.menu-toggler .menu-icon{
+    width: 100%;
+    transform: rotateX(20deg);
+}
 /*-------------------------------
 => End Header Style
 -------------------------------*/
@@ -307,11 +324,12 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1140px;
+    width: 1170px;
     text-align: right;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    padding: 0 15px;
 }
 
 .firstSider .owl-dots .owl-dot {
@@ -329,7 +347,7 @@ header{
     position: absolute;
     top: 10px;
     left: 50%;
-    width: auto;
+    width: auto !important;
     display: block;
     transform: translateX(-50%);
     z-index: 1000;
@@ -381,8 +399,9 @@ header{
     left: 50%;
     transform: translateX(-50%);
     margin-top: 0;
-    width: 1140px;
+    width: 1170px;
     text-align: right;
+    padding: 0 15px;
 }
 .nestedSlider .owl-nav button{
     margin-top: 0;

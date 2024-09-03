@@ -1,0 +1,77 @@
+@media (max-width: 1199px){
+    .container{
+        max-width: 992px;
+    }
+    .shop-box{
+        width: 400px;
+        padding: 30px;
+    }
+    .shop-box h3 {
+        font-size: 40px;
+        line-height: 51.2px;
+    }
+    .shop-box p {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 1.5rem;
+    }
+    .firstSider .owl-dots,
+    .nestedSlider .owl-nav {
+        width: 992px;
+    }
+    .nestedSlider .owl-item {
+        width: 1024px !important;
+    }
+}
+/*//////// END 1199PX ////////*/
+/*//////// START 991PX ////////*/
+@media (max-width: 991px){
+    .menu-toggler{
+        display: block;
+        z-index: 1026;
+    }
+    .logo-view {
+        z-index: 1026;
+    }
+    .main-nav .navbar {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: -280px;
+        width: 280px;
+        height: 100%;
+        display: block;
+        padding-top: 75px;
+        background-color: #fff;
+        margin: 0;
+        transition: left 0.2s ease-in-out;
+        z-index: 1025;
+    }
+    header.active .main-nav .navbar {
+        left: 0;
+    }
+    header.active .main-nav .navbar:after {
+        content: '';
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: calc(100% - 280px);
+        height: 100%;
+        background-color: rgba(0, 0, 0, .6);
+    }
+    .main-nav .navbar li {
+        margin: 0;
+    }
+    .main-nav .navbar a {
+        display: flex;
+        padding: 10px 15px;
+        border-top: 1px solid var(--gray89);
+    }
+    .main-nav ul li.dropdown a::after {
+        margin-left: auto;
+    }
+    .main-nav .srch-form {
+        margin-left: auto;
+    }
+}
+/*//////// END 991PX ////////*/
