@@ -1,38 +1,49 @@
-@media (max-width: 1199px){
-    .container{
+@media (max-width: 1199px) {
+    .container {
         max-width: 992px;
     }
-    .shop-box{
+
+    .shop-box {
         width: 400px;
         padding: 30px;
     }
+
     .shop-box h3 {
         font-size: 40px;
         line-height: 51.2px;
     }
+
     .shop-box p {
         font-size: 18px;
         line-height: 26px;
         margin-bottom: 1.5rem;
     }
+
     .firstSider .owl-dots,
     .nestedSlider .owl-nav {
         width: 992px;
     }
+
     .nestedSlider .owl-item {
         width: 1024px !important;
     }
 }
+
 /*//////// END 1199PX ////////*/
 /*//////// START 991PX ////////*/
-@media (max-width: 991px){
-    .menu-toggler{
-        display: block;
+@media (max-width: 991px) {
+    .main-nav {
+        margin-top: 1rem;
+    }
+
+    .menu-toggler {
         z-index: 1026;
     }
+
     .logo-view {
         z-index: 1026;
     }
+
     .main-nav .navbar {
         position: fixed;
         display: block;
@@ -41,37 +52,332 @@
         width: 280px;
         height: 100%;
         display: block;
-        padding-top: 75px;
+        padding-top: 65px;
         background-color: #fff;
         margin: 0;
         transition: left 0.2s ease-in-out;
         z-index: 1025;
     }
+
     header.active .main-nav .navbar {
         left: 0;
     }
-    header.active .main-nav .navbar:after {
-        content: '';
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: calc(100% - 280px);
-        height: 100%;
-        background-color: rgba(0, 0, 0, .6);
+
+    header.active .overlay {
+        display: block;
     }
+
     .main-nav .navbar li {
         margin: 0;
     }
+
     .main-nav .navbar a {
         display: flex;
         padding: 10px 15px;
         border-top: 1px solid var(--gray89);
     }
+
     .main-nav ul li.dropdown a::after {
         margin-left: auto;
     }
+
     .main-nav .srch-form {
         margin-left: auto;
     }
+
+    .nestedSlider .owl-stage-outer,
+    .nestedSlider .owl-stage {
+        height: 96%;
+    }
+
+    .firstSider .owl-dots,
+    .nestedSlider .owl-nav {
+        width: 100%;
+    }
+
+    .owl-nav button {
+        width: 35px;
+        height: 35px;
+        line-height: 35px !important;
+    }
+
+    .shop-box {
+        width: 350px;
+    }
+
+    .ser-item {
+        width: 50%;
+    }
+
+    .ser-item:last-child,
+    .ser-item:nth-last-child(2) {
+        margin-top: 30px;
+    }
+
+    .shop-box h3 {
+        font-size: 30px;
+        line-height: 41.2px;
+    }
+
+    .shop-box p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 1rem;
+    }
+
+    .nestedSlider .owl-item.cloned {
+        margin-left: 0;
+    }
+
+    .nestedSlider .owl-item {
+        width: 768px !important;
+    }
+
+    .price-box {
+        width: 250px;
+        padding: 15px;
+        right: 40px;
+        bottom: 8vh;
+    }
+
+    .price-box h5 {
+        font-size: 22px;
+        line-height: 27.6px;
+    }
+
+    .price-box p {
+        margin-bottom: 0.5rem;
+    }
+
+    .price-box h6 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .firstSider .title {
+        font-size: 30px;
+    }
+
+    .firstSider .owl-dots {
+        width: fit-content;
+        right: 0;
+        transform: inherit;
+        left: auto;
+    }
+
+    .nestedSlider .owl-dots {
+        top: auto;
+        bottom: 5px;
+        transform: translateX(-50%);
+        left: 50%;
+        right: inherit;
+        padding: 0;
+    }
+
+
 }
+
+
 /*//////// END 991PX ////////*/
+/*//////// START 767PX ////////*/
+@media (max-width: 767px) {
+    .btn {
+        padding: 0.75rem;
+    }
+
+    .hero-section {
+        padding-top: 75px;
+    }
+
+    .firstSider .fst-slide {
+        height: auto;
+    }
+
+    .nestedSlider .owl-item {
+        width: 576px !important;
+        padding-top: 50px;
+    }
+
+    .shop-box {
+        width: 250px;
+        padding: 15px;
+    }
+
+    .shop-box h3 {
+        font-size: 24px;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+
+    .price-box {
+        width: auto;
+        bottom: 15px;
+        padding-right: 50px;
+    }
+
+    .price-box h5 {
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .price-box p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .price-box h6 {
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .nestedSlider .owl-dots {
+        top: 10px;
+        bottom: auto;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+/*//////// END 767PX ////////*/
+/*//////// START 575PX ////////*/
+@media (max-width: 575px) {
+    .hero-section {
+        padding-top: 70px;
+    }
+
+    .main-nav .srch-form {
+        display: none;
+    }
+
+    .main-nav .quick-links li {
+        margin: 0 0.5rem;
+    }
+
+    .nestedSlider .owl-item {
+        width: auto !important;
+    }
+
+    .shop-box {
+        width: 75%;
+        top: 65px;
+    }
+
+    .shop-box h3 {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 5px;
+    }
+
+    .shop-box p {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 8px;
+    }
+
+    .shop-box .btn {
+        font-size: 12px;
+        width: fit-content;
+        padding: 0.5rem;
+    }
+
+    .firstSider .title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .price-box {
+        right: 0;
+        padding: 10px;
+        padding-right: 30px;
+    }
+
+    .price-box :where(h5, p, h6) {
+        font-size: 12px !important;
+        line-height: inherit !important;
+    }
+
+    .price-box .icon {
+        bottom: 12px;
+        right: 12px;
+        width: 14px !important;
+    }
+
+    .services-sec {
+        padding: 30px 0;
+    }
+
+    .ser-item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .ser-item:last-child,
+    .ser-item:nth-last-child(2) {
+        margin-top: 0;
+    }
+
+    .ser-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .ser-item .icon {
+        margin-right: 0.75rem;
+    }
+
+    .ser-item .icon img {
+        width: 2rem;
+    }
+
+    .ser-item h6 {
+        font-size: 1rem;
+        margin-bottom: .3rem;
+    }
+
+    .ser-item p {
+        font-size: 14px;
+    }
+
+
+}
+
+/*//////// START 575PX ////////*/
+/*//////// START 465PX ////////*/
+@media (max-width: 465px) {
+    .shop-box {
+        width: 91%;
+        background-color: rgb(255 255 255 / 1%);
+        padding-left: 0;
+    }
+
+    .price-box {
+        display: none;
+    }
+
+    .owl-nav button {
+        width: 30px;
+        height: 30px;
+        line-height: 30px !important;
+    }
+
+    .owl-nav button::after {
+        width: 20px;
+        height: 20px;
+        -webkit-mask-size: 13px;
+        top: 3px;
+    }
+
+    .owl-theme .owl-dots .owl-dot {
+        width: 22px;
+        height: 22px;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        width: 10px;
+        height: 10px;
+    }
+
+}
+
+/*//////// START 465PX ////////*/
