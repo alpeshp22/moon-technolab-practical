@@ -39,7 +39,7 @@ body {
 
 @media (min-width:992px) {
     .d-lg-none {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -93,7 +93,6 @@ img {
     display: flex;
     flex-wrap: wrap;
 }
-
 .mx-1rem {
     margin-left: -1rem;
     margin-right: -1rem;
